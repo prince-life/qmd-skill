@@ -2,7 +2,7 @@
 name: qmd
 description: Local hybrid search for markdown notes and docs. Use when searching notes, finding related content, or retrieving documents from indexed collections.
 homepage: https://github.com/tobi/qmd
-metadata: {"clawdbot":{"emoji":"🔍","os":["darwin","linux"],"requires":{"bins":["bun","qmd"]},"install":[{"id":"bun-qmd","kind":"shell","command":"bun install -g https://github.com/tobi/qmd","bins":["qmd"],"label":"Install qmd via Bun"}]}}
+metadata: {"clawdbot":{"emoji":"🔍","os":["darwin","linux"],"requires":{"bins":["qmd"]},"install":[{"id":"bun-qmd","kind":"shell","command":"bun install -g https://github.com/tobi/qmd","bins":["qmd"],"label":"Install qmd via Bun"},{"id":"gem-qmd","kind":"shell","command":"gem install qmd","bins":["qmd"],"label":"Install qmd via Ruby gem"}]}}
 ---
 
 # qmd - Quick Markdown Search
@@ -32,7 +32,13 @@ Install Bun (macOS): `brew install oven-sh/bun/bun`
 
 ## Install
 
+Via Bun:
+
 `bun install -g https://github.com/tobi/qmd`
+
+Via Ruby gem:
+
+`gem install qmd`
 
 ## Setup
 
