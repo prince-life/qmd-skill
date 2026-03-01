@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9Ruby – Quick Markdown Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🔍 9Ruby</h1>
+    <p class="tagline">Quick Markdown Search — powered by <strong>qmd</strong></p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>What is qmd?</h2>
+      <p>
+        <strong>qmd</strong> is a local hybrid search engine for Markdown notes, docs, and knowledge bases.
+        Index once, search fast — using keyword (BM25) or semantic vector search.
+      </p>
+    </section>
+
+    <section class="install">
+      <h2>Install</h2>
+      <div class="install-options">
+        <div class="install-card">
+          <h3>Via Ruby Gem</h3>
+          <pre><code>gem install qmd</code></pre>
+        </div>
+        <div class="install-card">
+          <h3>Via Bun</h3>
+          <pre><code>bun install -g https://github.com/tobi/qmd</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="usage">
+      <h2>Quick Start</h2>
+      <pre><code>qmd collection add /path/to/notes --name notes --mask "**/*.md"
+qmd embed
+qmd search "your query"</code></pre>
+    </section>
+
+    <section class="commands">
+      <h2>Common Commands</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Command</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>qmd search "query"</code></td><td>Fast keyword search (default)</td></tr>
+          <tr><td><code>qmd vsearch "query"</code></td><td>Semantic similarity search</td></tr>
+          <tr><td><code>qmd get "path/to/file.md"</code></td><td>Retrieve a full document</td></tr>
+          <tr><td><code>qmd update</code></td><td>Re-index changed files</td></tr>
+          <tr><td><code>qmd status</code></td><td>Check index health</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://github.com/tobi/qmd" target="_blank" rel="noopener">qmd on GitHub</a>
+      &middot;
+      <a href="https://github.com/prince-life/qmd-skill" target="_blank" rel="noopener">qmd-skill</a>
+    </p>
+  </footer>
+</body>
+</html>
